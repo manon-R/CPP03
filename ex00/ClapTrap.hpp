@@ -30,7 +30,9 @@ public:
 	int		getEnergyPoints() const;
 	int		getAttackDamage() const;
 
-	void 	setName(string);
+	void 	setName(const string&);
+	void	setAttackDamage(unsigned int amount);
+	void	setEnergyPoints(unsigned int amount);
 
 	void	attack(const string& target);
 	void	takeDamage(unsigned int amount);
